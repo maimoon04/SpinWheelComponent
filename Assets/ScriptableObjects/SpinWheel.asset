@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 971f9e7ed3691724e9a598b13884e5d6, type: 3}
+  m_Name: SpinWheel
+  m_EditorClassIdentifier: 
+  parent: {fileID: 0}
+  WheelTile: {fileID: 2772869301302487057, guid: fa71eae0692184849adf26de62ab353d, type: 3}
+  wheelData: {fileID: 11400000, guid: 05e8f679aba27714f93a7f72560e0863, type: 2}
+  wheeltilelist: []
+  numberOfTiles: 8
+  radius: 2
