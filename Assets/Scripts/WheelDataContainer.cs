@@ -9,17 +9,19 @@ public class WheelDataContainer : ScriptableObject{
     [SerializeField] private SpinWheelAttribute data;
     public string fileName ;
 
+    public SpinWheelAttribute Data { get => data; set => data = value; }
+
     [Button]
     void LoadData()
     {
         TextAsset file = Resources.Load<TextAsset>(fileName);
         if (file != null)
         {
-            data = JsonUtility.FromJson<SpinWheelAttribute>(file.text) as SpinWheelAttribute;
-            if (data != null)
+            Data = JsonUtility.FromJson<SpinWheelAttribute>(file.text) as SpinWheelAttribute;
+            if (Data != null)
             {
                 
-                Debug.Log("Loaded coins: " + data.coins);
+                Debug.Log("Loaded coins: " + Data.coins);
            }
             else
             {
